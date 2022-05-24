@@ -1,12 +1,15 @@
 import './App.css';
 import Header from './containers/Header';
 import Articles from './containers/Articles';
+import { UserProvider } from './contexts/UserContext';
 
 function App() {
   return (
     <div>
-      <Header />
-      <Articles />
+      <UserProvider>
+        <Header />
+        <Articles />
+      </UserProvider>
     </div>
   );
 }
