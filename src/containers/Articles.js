@@ -16,7 +16,7 @@ const Articles = ({className}) =>{
                 <Row>
                     {
                         user.articlesFromDevTo.map((article) => {
-                            <Article article={article} key={article.id}></Article>
+                            return <Article article={article} key={article.id}></Article>
                         })
                     }
                 </Row>
